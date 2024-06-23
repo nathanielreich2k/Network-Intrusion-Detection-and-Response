@@ -1,4 +1,4 @@
-# Network Intrusion, Detection, and Response using Snort and Wireshark.
+# Network Intrusion, Detection, and Response using Snort and Wireshark.🦈🥸
 
 ## Introduction
 ✨Network intrusion detection is a vital component of cybersecurity. It encompasses the surveillance and examination of network traffic to identify indications of unauthorized entry or malicious actions. This initiative strives to equip you with the abilities necessary to establish an Intrusion Detection System (IDS), identify network intrusions, and implement appropriate countermeasures.
