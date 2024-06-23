@@ -1,4 +1,4 @@
-# Network Intrusion Detection and Response
+# Network Intrusion, Detection, and Response using Snort and Wireshark.
 
 ## Introduction
 ✨Network intrusion detection is a vital component of cybersecurity. It encompasses the surveillance and examination of network traffic to identify indications of unauthorized entry or malicious actions. This initiative strives to equip you with the abilities necessary to establish an Intrusion Detection System (IDS), identify network intrusions, and implement appropriate countermeasures.
@@ -68,7 +68,7 @@ Objective: Generate normal and malicious network traffic to test the IDS.
 
 **Steps**:
 
-1. On the Client VM, use tools like ping, curl, or iperf to generate normal traffic.
+1. use tools like ping, curl, or iperf on the Client VM to generate normal traffic.
 2. On the Attacker VM, use Metasploit to launch a simple attack:
 ```sh
 msfconsole
@@ -76,10 +76,10 @@ use auxiliary/scanner/portscan/tcp
 set RHOSTS <Client_VM_IP>
 run
 ```
-Expected Output:
+Output:
 
-Normal traffic logged by Snort without alerts.
-Malicious traffic detected and logged by Snort with alerts.
+Snort logs normal traffic without alerts.
+Malicious traffic is detected and logged by Snort with alerts.
 
 ### Task 3: Analyzing Network Traffic with Wireshark
 Objective: Capture and analyze network traffic using Wireshark on the IDS VM.
@@ -90,7 +90,7 @@ Objective: Capture and analyze network traffic using Wireshark on the IDS VM.
 2. Capture traffic while generating both normal and malicious traffic.
 3. Use Wireshark filters to isolate and analyze specific types of traffic (e.g., ICMP, TCP SYN scans).
 
-**Expected Output**:
+**Output**:
 - Captured network traffic with clear differentiation between normal and malicious traffic.
 - Detailed analysis of packet contents and patterns.
 
@@ -104,8 +104,7 @@ Objective: Respond to detected intrusions based on Snort alerts.
      - Blocking the attacker's IP using iptables:
 ```
     sudo iptables -A INPUT -s <Attacker_IP> -j DROP
-```
-    - Modifying firewall rules to prevent similar attacks.
+
 3. Document the incident and response actions.
 
 **Expected Output**:
@@ -114,11 +113,7 @@ Objective: Respond to detected intrusions based on Snort alerts.
 - Enhanced network security through updated firewall rules.
 - Comprehensive incident response documentation.
 
-Additional Resources
-Snort Documentation
-Wireshark User Guide
-Metasploit Documentation
-VirtualBox User Manual
+
 
 
 
