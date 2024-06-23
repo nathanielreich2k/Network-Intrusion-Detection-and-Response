@@ -5,7 +5,9 @@
 
 ## Skills Learned
 
-
+-Configuring the Snort tool to monitor and log network traffic.
+-Simulating basic traffic and malicious traffic using Metasploit
+-Capturing data using the wireshark application
 
 
 ### Setting Up the Lab Environment
@@ -104,14 +106,19 @@ Objective: Respond to detected intrusions based on Snort alerts.
      - Blocking the attacker's IP using iptables:
 ```
     sudo iptables -A INPUT -s <Attacker_IP> -j DROP
+```
 
 3. Document the incident and response actions.
 
-**Expected Output**:
-
+**Expected Output**
 - Effective blocking of the attacker's IP.
 - Enhanced network security through updated firewall rules.
 - Comprehensive incident response documentation.
+
+
+## Conclusion
+To identify potential malicious traffic running on a network, it is important to utilize tools such as Wireshark and Snort to capture data for review. Incorporating Metasploit as a penetration tool can aid in simulating an attack so that work can be carried out to fix vulnrabilities before an event could occur.
+
 
 
 
